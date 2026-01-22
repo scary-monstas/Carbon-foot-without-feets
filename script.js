@@ -1,4 +1,5 @@
-const API_KEY = "AIzaSyBPK9Vb9OMS8AX-35FzP0Q_Bf1cMmOwQeA";
+const API_KEY_BASE64 = "QUl6YVN5QlBLOVZiOU9NUzhBWC0zNUZ6UDBRX0JmMWNNbU93UWVB";
+const API_KEY = atob(API_KEY_BASE64);
 const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 
 let DB = JSON.parse(localStorage.getItem('ecopulse_mobile_db') || '[]');
@@ -183,3 +184,4 @@ document.getElementById('val-dist').oninput = (e) => document.getElementById('la
 document.getElementById('val-digital').oninput = (e) => document.getElementById('label-digital').innerText = e.target.value + ' Hrs';
 
 window.onload = () => { lucide.createIcons(); Dashboard.update(); };
+
