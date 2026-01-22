@@ -1,4 +1,4 @@
-const API_KEY_BASE64 = "QUl6YVN5QlBLOVZiOU9NUzhBWC0zNUZ6UDBRX0JmMWNNbU93UWVB";
+const API_KEY_BASE64 = "QUl6YVN5RFhvZUhhbGJEVWExclpVMkoxRDVHalBPUDV1b01EYl9xX3FhOA==";
 const API_KEY = atob(API_KEY_BASE64);
 const API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 
@@ -184,4 +184,5 @@ document.getElementById('val-dist').oninput = (e) => document.getElementById('la
 document.getElementById('val-digital').oninput = (e) => document.getElementById('label-digital').innerText = e.target.value + ' Hrs';
 
 window.onload = () => { lucide.createIcons(); Dashboard.update(); };
+
 
